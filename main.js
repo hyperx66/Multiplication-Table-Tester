@@ -81,9 +81,5 @@ function submitBtn() {
     };
 
     emailjs.send('service_ivjaqxr', 'template_dcz2sxn', templateParams)
-        .then(function(response) {
-            console.log('SUCCESS!', response.status, response.text);
-        }, function(error) {
-            console.log('FAILED...', error);
-        });
+        .then(function(response) {}, function(error) {});
 }
