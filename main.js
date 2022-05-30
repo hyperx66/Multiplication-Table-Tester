@@ -9,15 +9,15 @@ $(document).ready(function() {
 
     var htmlToAdd = ""
     for (var i = 1; i <= 20; i++) {
-        var multiple = Math.floor(Math.random() * (12 - 3)) + 3;
-        var firstMulti = Math.floor(Math.random() * (12 - 3)) + 3;
+        var multiple = Math.floor(Math.random() * (5 - 1)) + 1;
+        var firstMulti = Math.floor(Math.random() * (13 - 1)) + 1;
         answerArr.push(multiple * firstMulti)
         questionArr.push(multiple + " x " + firstMulti)
         htmlToAdd += "<div class=\"row col-lg-3 col-md-3 mt-3\"><div class=\"col-md-12 text-center\"><h6 id=\"question\">Q" + i + ". " + multiple + " x " + firstMulti + "</h6></div><div class=\"col-md-12 mt-3\"><input type=\"number\" class=\"form-control\" id=\"input" + i + "\" /></div></div>"
     }
     $("#mainContent").html(htmlToAdd)
 
-    var maxTime = 300
+    var maxTime = 75
 
     var x = setInterval(function() {
         maxTime--
