@@ -13,7 +13,7 @@ $(document).ready(function() {
         var firstMulti = Math.floor(Math.random() * (13 - 1)) + 1;
         answerArr.push(multiple * firstMulti)
         questionArr.push(multiple + " x " + firstMulti)
-        htmlToAdd += "<div class=\"row col-lg-3 col-md-3 mt-3\"><div class=\"col-md-12 text-center\"><h6 id=\"question\">Q" + i + ". " + multiple + " x " + firstMulti + "</h6></div><div class=\"col-md-12 mt-3\"><input type=\"number\" class=\"form-control\" id=\"input" + i + "\" /></div></div>"
+        htmlToAdd += "<div class=\"row col-lg-3 col-md-3 col-12 mt-3\"><div class=\"col-md-12 col-12 text-center\"><h6 id=\"question\">Q" + i + ". " + multiple + " x " + firstMulti + "</h6></div><div class=\"col-md-12 col-12 mt-3\"><input type=\"number\" class=\"form-control\" id=\"input" + i + "\" /></div></div>"
     }
     $("#mainContent").html(htmlToAdd)
 
