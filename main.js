@@ -28,6 +28,8 @@ $(document).ready(function() {
         if (minute < 0 && seconds < 0) {
             document.getElementById("timerSet").innerHTML = "FAILED"
             const button = document.querySelector('button')
+            button.classList.remove("btn-primary")
+            button.classList.add("btn-danger")
             button.disabled = true
         }
     }, 1000);
