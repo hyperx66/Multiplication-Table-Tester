@@ -9,7 +9,8 @@ $(document).ready(function() {
 
     var htmlToAdd = ""
     for (var i = 1; i <= 20; i++) {
-        var multiple = Math.floor(Math.random() * (8 - 5)) + 5;
+        //(max+1-min)+min
+        var multiple = Math.floor(Math.random() * (10 - 6)) + 6;
         var firstMulti = Math.floor(Math.random() * (13 - 1)) + 1;
         answerArr.push(multiple * firstMulti)
         questionArr.push(multiple + " x " + firstMulti)
