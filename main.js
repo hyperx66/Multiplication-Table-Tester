@@ -10,8 +10,10 @@ $(document).ready(function() {
     var htmlToAdd = ""
     for (var i = 1; i <= 20; i++) {
         //(max+1-min)+min
-        var multiple = Math.floor(Math.random() * (10 - 6)) + 6;
-        var firstMulti = Math.floor(Math.random() * (13 - 1)) + 1;
+        var max = 12
+        var min = 0
+        var multiple = Math.floor(Math.random() * (max+1-min)) + min;
+        var firstMulti = Math.floor(Math.random() * (max+1-min)) + min;
         answerArr.push(multiple * firstMulti)
         questionArr.push(multiple + " x " + firstMulti)
         htmlToAdd += "<div class=\"row col-lg-3 col-md-3 col-12 mt-3\"><div class=\"col-md-12 col-12 text-center\"><h6 id=\"question\">Q" + i + ". " + multiple + " x " + firstMulti + "</h6></div><div class=\"col-md-12 col-12 mt-3\"><input type=\"number\" class=\"form-control\" id=\"input" + i + "\" /></div></div>"
